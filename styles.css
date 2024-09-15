@@ -1,0 +1,198 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #004080; /* Dark Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#header-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#header-tagline {
+    margin: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.ingredient-selector {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #004080;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #004080;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+label:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    accent-color: #004080; /* Blue color for checkbox */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #004080;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #003366;
+    transform: scale(1.02);
+}
+
+#recipe-results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* styles.css */
+
+/* Footer Styling */
+#credits {
+    background-color: #004080; /* Dark Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#credits p {
+    margin: 5px 0;
+}
+
+#credits a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#credits a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+/* Styles for devices with width less than or equal to 600px */
+@media (max-width: 600px) {
+    #header-title {
+        font-size: 1.5rem;
+    }
+
+    #header-tagline {
+        font-size: 1rem;
+    }
+
+    .ingredient-selector {
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    #credits {
+        font-size: 0.7rem;
+    }
+}
+
+/* Styles for devices with width greater than 600px (Tablets and up) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #header-title {
+        font-size: 1.8rem;
+    }
+
+    #header-tagline {
+        font-size: 1.1rem;
+    }
+
+    .ingredient-selector {
+        padding: 15px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+
+    #credits {
+        font-size: 0.75rem;
+    }
+}
+
+/* Styles for devices with width greater than 1024px (Desktops and larger) */
+@media (min-width: 1025px) {
+    #header-title {
+        font-size: 2rem;
+    }
+
+    #header-tagline {
+        font-size: 1.2rem;
+    }
+
+    .ingredient-selector {
+        padding: 20px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    #credits {
+        font-size: 0.8rem;
+    }
+}
